@@ -1,0 +1,19 @@
+.menu {
+	position: relative;
+	list-style: none;
+	background-color: yellowgreen;
+}
+
+.hamburger-button .icon {
+	display: inline-block;
+	width: 30px;
+	text-align: center;
+}
+
+.hamburger-button[aria-expanded="false"] .icon::before {
+	content: "\2715";
+}
+
+.hamburger-button[aria-expanded="true"] .icon::before {
+	content: "\2715";
+}
