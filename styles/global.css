@@ -1,3 +1,10 @@
+@font-face {
+	font-family: "Montserrat";
+	src: url("../assets/fonts/Montserrat-VariableFont_wght.ttf");
+	font-style: normal;
+	font-display: swap;
+}
+
 body,
 img,
 h1,
@@ -12,4 +19,10 @@ button {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+
+body {
+	font-family: "Montserrat", sans-serif;
+	font-size: 1rem;
+	font-weight: 500;
 }

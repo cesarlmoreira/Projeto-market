@@ -2,6 +2,7 @@
 	position: relative;
 	list-style: none;
 	background-color: yellowgreen;
+	width: 40%;
 }
 
 .hamburger-button .icon {
@@ -11,9 +12,30 @@
 }
 
 .hamburger-button[aria-expanded="false"] .icon::before {
-	content: "\2715";
+	content: "\2630";
 }
 
 .hamburger-button[aria-expanded="true"] .icon::before {
 	content: "\2715";
+}
+
+.menu li a {
+	color: white;
+	padding: 0.3rem 0;
+	display: block;
+	text-decoration: none;
+}
+
+.menu li a:hover,
+.menu li a:focus {
+	background-color: aqua;
+}
+
+.hamburger-button {
+	background: none;
+	border: none;
+	color: black;
+	font-size: 24px;
+	padding: 14px;
+	cursor: pointer;
 }
