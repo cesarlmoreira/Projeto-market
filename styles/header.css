@@ -1,37 +1,32 @@
-.menu {
-	position: relative;
-	list-style: none;
-	background-color: #515151;
-	width: 40%;
-	border-end-end-radius: 16px;
-}
-
-.hamburger-button .icon {
-	display: inline-block;
-	width: 30px;
-	text-align: center;
-}
-
-.hamburger-button[aria-expanded="false"] .icon::before {
-	content: "\2630";
-}
-
-.hamburger-button[aria-expanded="true"] .icon::before {
-	content: "\2715";
-}
-
-.hamburger-button-js-enable + .menu {
+.nav-menu {
 	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	background-color: white;
+}
+
+.menu {
 	position: absolute;
-	width: calc(100% - 30px);
-	left: 15px;
-	top: 60px;
+	list-style: none;
+	background-color: var(--primary-background);
+	width: 45%;
+	border-end-end-radius: 16px;
+	top: 100%;
+	padding: 0;
+	margin: 0;
+	display: flex;
 	flex-direction: column;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
+}
+
+.menu-closed {
+	display: none;
 }
 
 .menu li a {
 	color: white;
-	padding: 0.4rem 0;
+	padding: 0.4rem 1rem;
 	display: block;
 	text-decoration: none;
 }
@@ -39,17 +34,44 @@
 .menu li a:hover,
 .menu li a:focus {
 	background-color: aqua;
+	color: black;
+}
+
+.menu li .last-button:hover,
+.menu li .last-button:focus {
+	border-end-end-radius: 16px;
 }
 
 .hamburger-button {
 	background: none;
 	border: none;
 	color: black;
-	font-size: 24px;
-	padding: 14px;
+	font-size: 32px;
+	padding: 4px 0px 4px 14px;
 	cursor: pointer;
+}
+
+.hamburger-button .icon {
+	display: inline-block;
+	width: 28px;
+	text-align: center;
+}
+
+/* Ícone hamburguer */
+.hamburger-button[aria-expanded="false"] .icon::before {
+	content: "\2630";
+}
+
+/* Ícone X */
+.hamburger-button[aria-expanded="true"] .icon::before {
+	content: "\2715";
 }
 
 .hamburger-button-js-enable {
 	display: block;
+}
+
+.nav-menu__icon img {
+	display: block;
+	width: 112px;
 }

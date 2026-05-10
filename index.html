@@ -6,28 +6,40 @@
 		<link rel="stylesheet" href="./styles/styles.css" />
 		<title>OfertLab</title>
 	</head>
+
 	<body>
 		<header>
 			<nav class="nav-menu">
 				<button
+					type="button"
 					class="hamburger-button"
 					id="hamburger-button"
-					aria-label="Menu Principal"
+					aria-label="Abrir menu principal"
 					aria-controls="menu"
-					aria-expanded="true"
+					aria-expanded="false"
 				>
 					<span class="icon"></span>
 				</button>
 
-				<ul class="menu" id="menu">
+				<ul class="menu menu-closed" id="menu" aria-hidden="true">
 					<li><a href="#">Mercado Livre</a></li>
 					<li><a href="#">Amazon</a></li>
-					<li><a href="#">Shopee</a></li>
+					<li><a class="last-button" href="#">Shopee</a></li>
 				</ul>
+				<div class="nav-menu__icon">
+					<a href="#"
+						><img
+							class="icon-ofertlab"
+							src="./assets/img/Logo-full.png"
+							alt="OfertLab"
+					/></a>
+				</div>
 			</nav>
 		</header>
 
-		<main></main>
+		<main>
+			<span class="header-hero"></span>
+		</main>
 
 		<footer></footer>
 
