@@ -6,31 +6,55 @@
 		<link rel="stylesheet" href="./styles/styles.css" />
 		<title>OfertLab</title>
 	</head>
+
 	<body>
 		<header>
 			<nav class="nav-menu">
 				<button
+					type="button"
 					class="hamburger-button"
 					id="hamburger-button"
-					aria-label="Menu Principal"
+					aria-label="Abrir menu principal"
 					aria-controls="menu"
-					aria-expanded="true"
+					aria-expanded="false"
 				>
 					<span class="icon"></span>
 				</button>
 
-				<ul class="menu" id="menu" aria-hidden="true">
+				<ul class="menu menu-closed" id="menu" aria-hidden="true">
 					<li><a href="#">Mercado Livre</a></li>
 					<li><a href="#">Amazon</a></li>
-					<li><a href="#">Shopee</a></li>
+					<li><a href="#">Shein</a></li>
+					<li><a class="last-button" href="#">Shopee</a></li>
 				</ul>
+				<div class="nav-menu__icon">
+					<a href="#"
+						><img
+							class="icon-ofertlab"
+							src="./assets/img/Logo-full.png"
+							alt="OfertLab"
+					/></a>
+				</div>
 			</nav>
 		</header>
 
-		<main></main>
+		<main>
+			<section class="header-hero">
+				<h2 class="header-hero__title">
+					DESCOBERTAS INCRÍVEIS QUE
+					<span class="title-blue">VOCÊ VAI AMAR!</span>
+				</h2>
+				<p class="header-hero__text">
+					Explore nossos produtos com os melhores produtos e ofertas
+					irresistíveis de afiliados, selecionados para seu estilo de vida.
+				</p>
+
+				<a class="button-offert" href="#">VER OFERTAS!</a>
+			</section>
+		</main>
 
 		<footer></footer>
 
-		<script href="./menu.js" defer></script>
+		<script src="./js/menu.js" defer></script>
 	</body>
 </html>
