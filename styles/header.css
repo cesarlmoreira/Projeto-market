@@ -33,8 +33,8 @@
 
 .menu li a:hover,
 .menu li a:focus {
-	background-color: aqua;
-	color: black;
+	background-color: var(--tertiary-color);
+	color: var(--primary-color);
 }
 
 .menu li .last-button:hover,
@@ -45,7 +45,7 @@
 .hamburger-button {
 	background: none;
 	border: none;
-	color: black;
+	color: var(--primary-color);
 	font-size: 32px;
 	padding: 4px 0px 4px 14px;
 	cursor: pointer;

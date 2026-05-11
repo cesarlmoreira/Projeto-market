@@ -7,6 +7,8 @@
 
 :root {
 	--primary-color: black;
+	--secundary-color: white;
+	--tertiary-color: #3ee9e3;
 
 	--primary-background: #222222;
 }
