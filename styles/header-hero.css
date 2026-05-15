@@ -30,8 +30,8 @@
 }
 
 .button-offert {
-    font-size: 1rem;
-    font-weight: 800;
+	font-size: 1rem;
+	font-weight: 800;
 	margin-left: 14px;
 	color: var(--secundary-color);
 	text-decoration: none;
@@ -43,4 +43,40 @@
 	padding: 8px 24px;
 	cursor: pointer;
 	box-shadow: 0 4px 15px rgba(255, 115, 0, 0.4);
+}
+
+.products {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	gap: 20px;
+}
+
+.card {
+	background: white;
+	border-radius: 16px;
+	padding: 16px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+	transition: 0.2s;
+}
+
+.card:hover {
+	transform: translateY(-4px);
+}
+
+.card img {
+	width: 100%;
+	height: 180px;
+	object-fit: contain;
+}
+
+.title {
+	font-size: 14px;
+	font-weight: bold;
+	margin: 12px 0;
+}
+
+.price {
+	color: #2563eb;
+	font-size: 20px;
+	font-weight: bold;
 }
