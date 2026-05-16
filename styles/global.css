@@ -5,32 +5,199 @@
 	font-display: swap;
 }
 
-:root {
-	--primary-color: black;
-	--secundary-color: white;
-	--tertiary-color: #3ee9e3;
-
-	--primary-background: #222222;
-}
-
-body,
-img,
-h1,
-p,
-fieldset,
-legend,
-label,
-input,
-select,
-textarea,
-button {
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
+:root {
+	--text-primary-color: white;
+	--text-secundary-color: #10b981;
+	--text-title-color: #111827;
+
+	--background-primary-color: #f4f7fb;
+	--background-secundary-color: #ffffff;
+	--background-tertiary-color: #e5e7eb;
+	--background-quaternary-color: #111827;
+	--background-quinternary-color: #3ee9e3;
+
+	--button-gradient-color: linear-gradient(180deg, #ff9500 0%, #ff5e00 100%);
+	--newsletter-gradient: linear-gradient(135deg, #0f172a, #1e3a8a);
+	--newsletter-gradient-button: linear-gradient(90deg, #3b82f6, #60a5fa);
+
+	--font-title: "Montserrat", sans-serif;
+
+	--font-weight-title-card: 700;
+	--font-weight-description: 400;
+}
+
 body {
+	background-color: var(--background-primary-color);
+	/* padding: 40px 20px; */
 	font-family: "Montserrat", sans-serif;
 	font-size: 1rem;
-	font-weight: 500;
+	font-weight: var(--font-weight-description);
+}
+
+.products-container {
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+.products-title {
+	width: 70%;
+	margin: 1rem auto;
+	font-size: 1.5rem;
+	font-weight: var(--font-weight-title-card);
+	color: var(--text-title-color);
+	text-align: center;
+}
+
+.products-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	gap: 24px;
+}
+
+.product-card {
+	background-color: var(--background-secundary-color);
+	border-radius: 18px;
+	overflow: hidden;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+	transition: 0.3s ease;
+	display: flex;
+	flex-direction: column;
+}
+
+.product-card:hover {
+	transform: translateY(-6px);
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+	margin: 0.5rem auto;
+	height: 200px;
+	width: auto;
+	object-fit: cover;
+	background-color: var(--background-tertiary-color);
+}
+
+.product-content {
+	padding: 0px 18px 18px 18px;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+.product-title {
+	font-size: 1rem;
+	font-weight: 700;
+	color: var(--text-title-color);
+	margin-bottom: 4px;
+	line-height: 1.4;
+	min-height: 45px;
+}
+
+.product-description {
+	padding-bottom: 12px;
+	font-weight: var(--font-weight-description);
+	font-size: 0.8rem;
+}
+
+.product-price {
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: var(--text-secundary-color);
+	margin-bottom: 8px;
+}
+
+.product-button {
+	margin-top: auto;
+	border: none;
+	background: var(--button-gradient-color);
+	padding: 14px;
+	border-radius: 12px;
+	font-size: 1rem;
+	font-weight: var(--font-weight-title-card);
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.product-button__link {
+	text-decoration: none;
+	font-family: var(--font-title);
+	color: var(--text-primary-color);
+	font-weight: var(--font-weight-title-card);
+}
+
+.product-button:hover {
+	opacity: 0.9;
+}
+
+/* NEWSLETTER */
+.newsletter-section {
+	max-width: 1200px;
+	margin: 2.5rem auto 0;
+	padding: 0 20px;
+}
+
+.newsletter-content {
+	background: var(--newsletter-gradient);
+	padding: 60px 30px;
+	border-radius: 32px;
+	text-align: center;
+	color: var(--text-primary-color);
+}
+
+.newsletter-content h2 {
+	font-size: 2rem;
+	font-weight: 800;
+}
+
+.newsletter-content p {
+	margin-top: 16px;
+	color: var(--text-primary-color);
+}
+
+.newsletter-form {
+	display: flex;
+	justify-content: center;
+	gap: 16px;
+	margin-top: 32px;
+	flex-wrap: wrap;
+}
+
+.newsletter-form input {
+	width: 320px;
+	padding: 16px;
+	border-radius: 14px;
+	border: none;
+	outline: none;
+}
+
+.newsletter-form button {
+	padding: 16px 24px;
+	border-radius: 14px;
+	border: none;
+	font-family: var(--font-title);
+	font-weight: var(--font-weight-description);
+	cursor: pointer;
+	background: var(--newsletter-gradient-button);
+	color: var(--text-primary-color);
+}
+
+@media (max-width: 768px) {
+	.hero-title {
+		font-size: 2.2rem;
+	}
+
+	.section-title,
+	.product-price {
+		font-size: 1.7rem;
+	}
+
+	.newsletter-content h2 {
+		font-size: 1.6rem;
+	}
 }
