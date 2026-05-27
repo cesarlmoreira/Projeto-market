@@ -29,6 +29,7 @@
 	padding: 0.4rem 1rem;
 	display: block;
 	text-decoration: none;
+	font-size: 1rem;
 }
 
 .menu li a:hover,
@@ -77,6 +78,30 @@
 
 @media screen and (min-width: 768px) {
 	.menu {
-		width: 32%;
+		width: 22%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.menu {
+		width: 17%;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.menu {
+		width: 15%;
+	}
+	.menu li a {
+		font-size: 1.3rem;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.menu {
+		width: 14%;
+	}
+	.menu li a {
+		font-size: 1.5rem;
 	}
 }
