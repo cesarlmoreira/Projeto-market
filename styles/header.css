@@ -88,20 +88,20 @@
 	}
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1366px) {
 	.menu {
 		width: 15%;
 	}
 	.menu li a {
-		font-size: 1.3rem;
+		font-size: 1rem;
 	}
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1920px) {
 	.menu {
 		width: 14%;
 	}
 	.menu li a {
-		font-size: 1.5rem;
+		font-size: 1.2rem;
 	}
 }
