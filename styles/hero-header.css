@@ -73,7 +73,7 @@
 	}
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1366px) {
 	.header-hero {
 		background: url("../assets/img/hero-header/hero-desktop.webp");
 		background-size: cover;
